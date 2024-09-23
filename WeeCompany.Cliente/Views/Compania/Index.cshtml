@@ -1,0 +1,24 @@
+﻿
+<article class="card  boder-0 rounded-3 overflow-hidden flex-md-row">
+    <div class="col-img order-md-1 flex-md-shrink-1 flex-md-grow-1 w-100">
+        <picture>
+            <source srcset="img/logo.jpg"
+                    media="(min-width: 760px)">
+            <source srcset="img/logoM.jpg"
+                    media="(max-width: 767px)">
+            <img src="img/logo.jpg" alt="Sample Image" class="card-img-top" />
+        </picture>
+    </div>
+    <div class="col-form-Proy order-md-2 flex-md-shrink-1 flex-md-grow-1 w-100">
+        <div class="card-body  h-100">
+            @* LLamado con ajax *@
+            <partial name = "_Nuevo" />
+            @* <button id="cargarLista" class="btn btn-primary">Continiar</button>
+            <hr /> *@
+            <div id="ListaDeCompanias">
+            </div>
+        </div>
+    </div>
+</article>
+<partial name="_MostrarModal" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

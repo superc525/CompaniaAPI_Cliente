@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CompaniaModel>
+<div class="card text-primary" style="border:none;">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Registros</h5>
+                    </div>
+                    <div class="table-responsive scrollP">
+                        <table class="table" id="MyTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Compañia
+                                    </th>
+                                    <th scope="col">
+                                        Contacto
+                                    </th>
+                                    <th scope="col">
+                                        Correo
+                                    </th>
+                                    <th scope="col">
+                                        Telefono
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th scope="row">
+                                             @Html.DisplayFor(modelItem => item.NombreCompania)
+                                        </th>
+                                        <td scope="row">
+                                            @Html.DisplayFor(modelItem => item.NombrePersonaContacto)
+                                        </td>
+                                        <td scope="row">
+                                            @Html.DisplayFor(modelItem => item.CorreoElectronico)
+                                        </td >
+                                        <td scope="row">
+                                            @Html.DisplayFor(modelItem => item.Telefono)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <a asp-action="index" class="btn btn-primary btn-sm">Regresar</a>
+</div>

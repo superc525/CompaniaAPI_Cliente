@@ -1,0 +1,22 @@
+﻿.col-img {
+    background-color: gray;
+}
+.col-form-Proy{
+    background-color:white;
+    margin-top:10%
+}
+.contenedosElemento{
+    margin:5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}
+.scrollP {
+    height: 22em;
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
